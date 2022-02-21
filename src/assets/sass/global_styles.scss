@@ -1,0 +1,37 @@
+$containers:(
+    'navbar':70px,
+);
+@each $container,$containerHeight in $containers{
+    .max-allowed-container--#{$container}{
+        max-height: calc(100vh - #{$containerHeight});
+        height: calc(100vh - #{$containerHeight});
+        min-height: calc(100vh - #{$containerHeight});
+    }
+}
+
+$overflows:(
+    'auto','hidden','scroll'
+);
+@each $overflow in $overflows{
+    .overflow-x--#{$overflow}{
+        overflow-x: #{$overflow};
+    }
+    
+    .overflow-y--#{$overflow}{
+        overflow-y: #{$overflow};
+    }
+    
+    .overflow-both--#{$overflow}{
+        overflow-x: #{$overflow};
+        overflow-y: #{$overflow};
+    }
+}
+
+.pointer-cursor{
+    cursor:pointer;
+}
+
+.disabled-cursor{
+    cursor: auto;
+    pointer-events: none;
+}

@@ -1,0 +1,18 @@
+//overriding bootstrap theme colors
+$theme-colors: (
+  "primary": #811434,
+  "primary-lite": rgba(#811434,0.2),
+  "success": #00d7b6,
+  "success-lite": rgba(#00d7b6,0.2),
+  "secondary":#8C8CA1,
+  "secondary-lite": rgba(#8C8CA1,0.1),
+  "secondary-dark":#485572,
+  "danger":#EF4859,
+  "danger-lite": rgba(#EF4859,0.2),
+  "warning":#FFAA2C,
+  "warning-lite": rgba(#FFAA2C,0.2),
+);
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+// BootstrapVue and its default variables
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
